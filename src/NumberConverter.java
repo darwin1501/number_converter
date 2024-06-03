@@ -1,13 +1,14 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 
-import java.util.*;
+
 /**
  *
  * @author darwin
+ *
  */
+
+import java.util.*;
+
 public class NumberSystem {
     static Scanner sc = new Scanner(System.in);
 
@@ -16,7 +17,7 @@ public class NumberSystem {
         String binary = sc.next();
         int decimal = Integer.parseInt(binary, 2);
 
-        System.out.println(decimal);
+        System.out.println("Decimal: " + decimal);
     }
 
     public static void binaryToOctal(){
@@ -25,7 +26,7 @@ public class NumberSystem {
         int decimal = Integer.parseInt(binary, 2);
         String octal = Integer.toOctalString(decimal);
 
-        System.out.println(octal);
+        System.out.println("Octal: " + octal);
     }
 
     public static void binaryToHexa(){
@@ -34,7 +35,7 @@ public class NumberSystem {
         int decimal = Integer.parseInt(binary, 2);
         String hexa = Integer.toHexString(decimal);
 
-        System.out.println(hexa);
+        System.out.println("Hexadecimal: " + hexa);
     }
 
     public static void octalToBinary(){
@@ -43,7 +44,7 @@ public class NumberSystem {
         int decimal = Integer.parseInt(octal, 8);
         String binary = Integer.toBinaryString(decimal);
 
-        System.out.println(binary);
+        System.out.println("Binary: " + binary);
     }
 
     public static void octalToDecimal(){
@@ -51,7 +52,7 @@ public class NumberSystem {
         String octal = sc.next();
         int decimal = Integer.parseInt(octal, 8);
 
-        System.out.println(decimal);
+        System.out.println("Decimal: " + decimal);
     }
 
     public static void octalToHexa(){
@@ -60,7 +61,7 @@ public class NumberSystem {
         int decimal = Integer.parseInt(octal, 8);
         String hex = Integer.toHexString(decimal);
 
-        System.out.println(hex);
+        System.out.println("Hexadecimal: " + hex);
     }
 
     public static void decimalToBinary(){
@@ -68,7 +69,7 @@ public class NumberSystem {
         int decimal = sc.nextInt();
         String binary = Integer.toBinaryString(decimal);
 
-        System.out.println(binary);
+        System.out.println("Binary: " + binary);
     }
 
     public static void decimalToOctal(){
@@ -76,40 +77,40 @@ public class NumberSystem {
         int decimal = sc.nextInt();
         String octal = Integer.toOctalString(decimal);
 
-        System.out.println(octal);
+        System.out.println("Octal: " + octal);
     }
 
     public static void decimalToHexa(){
-        System.out.print("Enter a number");
+        System.out.print("Enter a number: ");
         int decimal = sc.nextInt();
-        String hexa = Integer.toHexString(decimal);
+        String hex = Integer.toHexString(decimal);
 
-        System.out.println(hexa);
+        System.out.println("Hexadecimal: " + hex);
     }
 
     public static void hexaToDecimal(){
-        System.out.print("Enter a Number");
-        String hexa = sc.next();
-        int decimal = Integer.parseInt(hexa, 16);
+        System.out.print("Enter a Number: ");
+        String hex = sc.next();
+        int decimal = Integer.parseInt(hex, 16);
 
-        System.out.println(decimal);
+        System.out.println("Decimal: " + decimal);
     }
 
     public static void hexaToBinary(){
-        System.out.print("Enter Hexadecimal");
+        System.out.print("Enter Hexadecimal: ");
         String hexa = sc.next();
         int decimal = Integer.parseInt(hexa, 16);
         String binary = Integer.toBinaryString(decimal);
 
-        System.out.println(binary);
+        System.out.println("Binary: " + binary);
     }
 
     public static void hexaToOctal(){
         System.out.print("Enter Hexadecimal: ");
-        String hexa = sc.next();
-        int decimal = Integer.parseInt(hexa, 16);
+        String hex = sc.next();
+        int decimal = Integer.parseInt(hex, 16);
         String octal = Integer.toOctalString(decimal);
 
-        System.out.println(octal);
+        System.out.println("Octal: " + octal);
     }
 }
