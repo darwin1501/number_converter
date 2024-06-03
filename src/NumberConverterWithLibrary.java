@@ -9,7 +9,7 @@
 
 import java.util.*;
 
-public class NumberConverter {
+public class NumberConverterWithLibrary {
     static Scanner sc = new Scanner(System.in);
 
     public static void binaryToDecimal(){
