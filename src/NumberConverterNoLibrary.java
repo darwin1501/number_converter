@@ -20,6 +20,7 @@ public class NumberConverterNoLibrary {
                 break;
             }catch (Exception e){
                 System.out.println("Invalid input try again!");
+                sc.nextLine(); // Consume the invalid input
             }
         }
     }
