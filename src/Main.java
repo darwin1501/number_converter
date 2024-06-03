@@ -7,7 +7,7 @@ public class Main {
                 NumberConverter.binaryToDecimal();
                 break;
             }catch (Exception e){
-                System.out.println("Invalid input try again.");
+                System.out.println("Invalid input try again!");
             }
         }
     }
